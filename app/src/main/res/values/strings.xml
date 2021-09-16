@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFirstProject</string>
+    <string name="example_button_text">example button</string>
+    <string name="type_here">type here</string>
+</resources>
