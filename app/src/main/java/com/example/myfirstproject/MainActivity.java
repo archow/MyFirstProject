@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                     ConstraintLayout.LayoutParams.WRAP_CONTENT));
         mExampleLayout.addView(mExampleEdit);
 
+        //test
+
 
         //let's make our elements interactive
         //how do..
