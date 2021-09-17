@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mHelloTextView;
     Button mExampleButton;
     EditText mExampleEdit;
+    ConstraintLayout mExampleLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,21 +34,23 @@ public class MainActivity extends AppCompatActivity {
         //now initialize the elements here
         mHelloTextView = (TextView) findViewById(R.id.hello_tex_view);
         mExampleButton = (Button) findViewById(R.id.example_button);
-        mExampleEdit = (EditText) findViewById(R.id.example_et);
+        //mExampleEdit = (EditText) findViewById(R.id.example_et);
+        mExampleLayout = (ConstraintLayout) findViewById(R.id.example_layout);
 
         //Log levels can be found in the Logcat window
         //takes two parameters: name/tag & message
         Log.d(MY_FIRST_LOG, "MY APP JUST STARTED");
 
-        /**
         //creating edit text programmatically
         //let's come back to this (adding items programmatically)
 
-        EditText editText = new EditText(this);
-        editText.setWidth(ConstraintLayout.LayoutParams.MATCH_PARENT);
-        editText.setHeight(ConstraintLayout.LayoutParams.MATCH_PARENT);
-        editText.setHint("type here");
-         **/
+        mExampleEdit = new EditText(this);
+        mExampleEdit.setHint("type here");
+        mExampleEdit.setLayoutParams(new ConstraintLayout
+                .LayoutParams(ConstraintLayout.LayoutParams.WRAP_CONTENT,
+                    ConstraintLayout.LayoutParams.WRAP_CONTENT));
+        mExampleLayout.addView(mExampleEdit);
+
 
         //let's make our elements interactive
         //how do..

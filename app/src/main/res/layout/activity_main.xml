@@ -30,14 +30,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <EditText
-        android:id="@+id/example_et"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/hello_tex_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:hint="@string/type_here"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
