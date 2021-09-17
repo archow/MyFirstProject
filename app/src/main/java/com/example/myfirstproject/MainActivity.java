@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String MY_FIRST_LOG = "my_first_log";
+    //Lauro WH
 
     //let's go ahead and identify the view elements we'll be using in our code
     //so...how do?
